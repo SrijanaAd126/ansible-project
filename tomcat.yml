@@ -6,4 +6,9 @@
     - name: Install tomcat on local server
       yum:
         name: tomcat
-        state: latest 
+        state: latest
+
+    - name: start tomcat server
+      service:
+        name: tomcat
+        state: started 
