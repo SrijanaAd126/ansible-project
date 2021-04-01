@@ -4,4 +4,6 @@
   gather_facts: true
   tasks:
     - name: Install tomcat on local server
-      
+      yum:
+        name: tomcat
+        state: latest 
