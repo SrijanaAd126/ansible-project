@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  become: true
+  gather_facts: true
+  tasks:
+    - name: Install tomcat on local server
+      
