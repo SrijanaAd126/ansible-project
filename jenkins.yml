@@ -1,1 +1,15 @@
 ---
+hosts: localhosts
+become: true
+tasks:
+  - name: Install jenkins
+    yum: 
+      - name: Jenkins
+        status: latest
+
+  - name: start jenkins
+    service: 
+      - name: Jenkins
+        status: started
+
+
